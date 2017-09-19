@@ -33,4 +33,4 @@ The application is accepted if:
 
 ###  What is the difference between id and class in CSS? [2p]
 #### Your answer:
-[add your answer here]
+ID's have a priority over classes, which can be a problem. ID is useful if you want to style a single element, otherwise classes can be used for multiple selected elements.
