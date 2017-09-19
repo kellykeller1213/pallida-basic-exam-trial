@@ -5,7 +5,6 @@
 #print(odd_filter([1, 2, 3, 4, 5]))  # should print [1, 3, 5]
 
 number = list(range(1, 100))
-odd_list = []
 
 def odd_filter():
     odd_list = number[0::2]
