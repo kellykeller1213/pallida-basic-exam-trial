@@ -5,4 +5,27 @@
 # example: "elek.viz@exam.com" for this input the output should be: "Viz Elek"
 # accents does not matter
 
-print(name_from_email("elek.viz@exam.com"))
+#print(name_from_email("elek.viz@exam.com"))
+import re
+
+email = input("Please type in your E-mail address: ")
+input_data = re.findall(r"[\w']+|[.,!?;]", email)
+first_name = input_data[0]
+second_name = input_data[2]
+print(first_name , second_name)
+#print(input_data[:1](input_data[:2]))
+
+
+
+#for i in range(len(input)):
+    #if i != "."
+        #print(i)
+
+#def name()
+
+
+#name()
+
+#shop_items[1] = "Croissant"
+#shop_items[3] = "Ice cream"
+#print(shop_items)
