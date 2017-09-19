@@ -7,5 +7,20 @@
 # input: ["ghhandle1", "ghhandle2"]
 # output: ["https://github.com/greenfox-academy/ghhandle1", "https://github.com/greenfox-academy/ghhandle2"]
 
-names = ["ghhandle1", "ghhandle2"]
-print(urls_from_handles(names))
+#names = ["ghhandle1", "ghhandle2"]
+#print(urls_from_handles(names))
+
+github_usernames = input("Please type in your GitHub username: ")
+github = "https://github.com/greenfox-academy/"
+
+def github_links():
+    github_urls = []
+    for i in range(len(github_usernames)):
+        github_urls = github + github_usernames[i]
+        print(github_urls)
+
+github_links()
+
+
+
+
