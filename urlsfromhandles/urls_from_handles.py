@@ -10,16 +10,16 @@
 #names = ["ghhandle1", "ghhandle2"]
 #print(urls_from_handles(names))
 
-import re
+names = ["ghhandle1", "ghhandle2", "hellobello"]
 
-github_usernames = input("Please type in your GitHub username: ")
-github = "https://github.com/greenfox-academy/"
+def urls_from_handles(handle_names):
+    greenfox_url = "https://github.com/greenfox-academy/"
+    urls_list = []
+    for handle in handle_names:
+        full_url = greenfox_url + handle
+        urls_list.append(full_url)
+    return urls_list
 
-def github_links():
-    github_urls = []
-    input_data = re.findall(r"[\w']+|[.,!?; ]", github_usernames)
-    github_urls.append(github + github_usernames)
-    for i in range(len(github_usernames)):
-        print(github_urls)
-
-github_links()
+def main():
+    print(urls_from_handles(names))
+main()
