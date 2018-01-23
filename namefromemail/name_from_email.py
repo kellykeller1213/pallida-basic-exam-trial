@@ -8,11 +8,14 @@
 #print(name_from_email("elek.viz@exam.com"))
 import re
 
-def name_extracter():
-    email = input("Please type in your E-mail address: ")
-    input_data = re.findall(r"[\w']+|[.,!?;]", email)
-    first_name = input_data[0]
-    second_name = input_data[2]
-    print(second_name.capitalize() , first_name.capitalize())
 
-name_extracter()
+email = input("Please type in your E-mail address: ")
+
+
+def name_extracter(data):
+    input_data = re.findall(r"[\w']+|[.,!?;]", data)
+    first_name, last_name = input_data[0], input_data[2]
+    return last_name.capitalize() + " " + first_name.capitalize()
+
+
+print(name_extracter(email))
